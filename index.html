@@ -21,7 +21,7 @@
             try {
                 // When running locally, it talks to localhost. 
                 // Later, we will change this URL to your live backend url!
-                const res = await fetch('http://localhost:3000/api/greet');
+                const res = await fetch('https://my-live-backend-uly8.onrender.com/api/message');
                 const data = await res.json();
                 document.getElementById('response').innerText = data.message;
             } catch (err) {
